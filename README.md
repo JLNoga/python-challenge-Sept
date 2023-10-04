@@ -5,22 +5,30 @@
 
 Note: Please note that I previously completed this challenge in April 2023 and had to differentiate it from that repo by adding "Sept" to the end of the repo name.  This is all new work.
 
-###PyBank
-This project required me to loop through 3-years of stock price data using VBA to find the following for each stock:  
--Yearly Change (green fill = positive; red fill = negative)  
--Percentage Change  
--Total Stock Volume  
+### PyBank  
+This project was a financial analysis covering 86 months of profit/loss data. I was required to look through the data to find the following information and save it to a text file:   
+-Total Months  
+-Total Profit or Loss  
+-Average monthly change  
+-Greatest increase in profits  
+-Greatest decrease in profits  
 
-Then I created a table for each year that listed the stocks with the following characteristics:  
--Largest Percentage Change  
--Smallest Percentage Change  
--Largest Total Stock Volume  
+### PyPoll  
+This project was an analysis of voting data that included each voter ID, their county, and the candidate they selected.  I was required to loop through the data to find the following information and save it to a text file:  
+-Total votes cast  
+-A list of the candidates, including percentage and number of votes received  
+-The winning candidate  
 
-This repo contains the following files:  
-1) alphabetical_testing.xlsm ~ A smaller file to practice running the macro  
-2) Multiple_year_stock_data.xlsm ~ Contains 3-years of stock price data for evaluation  
-3) tickers_loop2.bas ~ VBA Macro to run on #2 above  
-4) Screenshot_tab2018.jpg ~ screenshot of the year 2018 tab of #2 showing the macro results  
-5) Screenshot_tab2019.jpg ~ screenshot of the year 2019 tab of #2 showing the macro results  
-6) Screenshot_tab2020.jpg ~ screenshot of the year 2020 tab of #2 showing the macro results  
-7) README.md ~ this readme file  
+The resulting voter data script is limited in its use because it can only count for three candidates.  Utilizing the pandas library in python would allow for a more robust script that could handle an unknown number of candidates.   
+
+This repo contains the following files:   
+1) README.md ~ this readme file   
+-PyBank folder  
+1) main.py - python script    
+2) Resources folder - budget_data.csv - file containing profit and loss data for evaluation    
+3) Analysis folder - financial_analysis.txt - results of the main.py script  
+-PyPoll folder  
+1) main.py - python script    
+2) Resources folder - election_data.csv - file containing voter data for evaluation    
+3) Analysis folder - voter_analysis.txt - results of the main.py script  
+
